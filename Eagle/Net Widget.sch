@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.1.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -777,135 +777,6 @@ Thru-hole RA Female Mini-B USB Connector 4UConnector: 18732&lt;/p&gt;
 <connect gate="G$1" pin="GND" pad="GND"/>
 <connect gate="G$1" pin="ID" pad="ID"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
-<library name="Weather Widget">
-<packages>
-<package name="ADAFRUIT-CC3000-BREAKOUT">
-<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="21" curve="90"/>
-<wire x1="3" y1="0" x2="23" y2="0" width="0" layer="21"/>
-<wire x1="23" y1="0" x2="26" y2="3" width="0" layer="21" curve="90"/>
-<wire x1="26" y1="3" x2="26" y2="37" width="0" layer="21"/>
-<wire x1="26" y1="37" x2="23" y2="40" width="0" layer="21" curve="90"/>
-<wire x1="23" y1="40" x2="3" y2="40" width="0" layer="21"/>
-<wire x1="3" y1="40" x2="0" y2="37" width="0" layer="21" curve="90"/>
-<wire x1="0" y1="37" x2="0" y2="3" width="0" layer="21"/>
-<pad name="P5" x="13" y="2" drill="0.8"/>
-<pad name="P4" x="10.46" y="2" drill="0.8"/>
-<pad name="P3" x="7.92" y="2" drill="0.8"/>
-<pad name="P2" x="5.38" y="2" drill="0.8"/>
-<pad name="P1" x="2.84" y="2" drill="0.8"/>
-<pad name="P6" x="15.54" y="2" drill="0.8"/>
-<pad name="P7" x="18.08" y="2" drill="0.8"/>
-<pad name="P8" x="20.62" y="2" drill="0.8"/>
-<pad name="P9" x="23.16" y="2" drill="0.8"/>
-</package>
-<package name="ADAFRUIT-TFT1.8-BREAKOUT">
-<wire x1="-25.4" y1="17.145" x2="-27.94" y2="14.605" width="0" layer="21" curve="90"/>
-<wire x1="-27.94" y1="14.605" x2="-27.94" y2="-14.605" width="0" layer="21"/>
-<wire x1="-27.94" y1="-14.605" x2="-25.4" y2="-17.145" width="0" layer="21" curve="90"/>
-<wire x1="-25.4" y1="-17.145" x2="25.4" y2="-17.145" width="0" layer="21"/>
-<wire x1="25.4" y1="-17.145" x2="27.94" y2="-14.605" width="0" layer="21" curve="90"/>
-<wire x1="27.94" y1="-14.605" x2="27.94" y2="14.605" width="0" layer="21"/>
-<wire x1="27.94" y1="14.605" x2="25.4" y2="17.145" width="0" layer="21" curve="90"/>
-<wire x1="25.4" y1="17.145" x2="-25.4" y2="17.145" width="0" layer="21"/>
-<pad name="P$1" x="-25.4" y="-11.43" drill="0.8" shape="octagon"/>
-<pad name="P$2" x="-25.4" y="-8.89" drill="0.8" shape="octagon"/>
-<pad name="P$3" x="-25.4" y="-6.35" drill="0.8" shape="octagon"/>
-<pad name="P$4" x="-25.4" y="-3.81" drill="0.8" shape="octagon"/>
-<pad name="P$5" x="-25.4" y="-1.27" drill="0.8" shape="octagon"/>
-<pad name="P$6" x="-25.4" y="1.27" drill="0.8" shape="octagon"/>
-<pad name="P$7" x="-25.4" y="3.81" drill="0.8" shape="octagon"/>
-<pad name="P$8" x="-25.4" y="6.35" drill="0.8" shape="octagon"/>
-<pad name="P$9" x="-25.4" y="8.89" drill="0.8" shape="octagon"/>
-<pad name="P$10" x="-25.4" y="11.43" drill="0.8" shape="octagon"/>
-</package>
-</packages>
-<symbols>
-<symbol name="ADAFRUIT-CC3000-BREAKOUT">
-<pin name="GND" x="-10.16" y="-5.08" length="middle" rot="R90"/>
-<pin name="3V3" x="-7.62" y="-5.08" length="middle" rot="R90"/>
-<pin name="VIN" x="-5.08" y="-5.08" length="middle" rot="R90"/>
-<pin name="CLK" x="-2.54" y="-5.08" length="middle" rot="R90"/>
-<pin name="MISO" x="0" y="-5.08" length="middle" rot="R90"/>
-<pin name="MOSI" x="2.54" y="-5.08" length="middle" rot="R90"/>
-<pin name="CS" x="5.08" y="-5.08" length="middle" rot="R90"/>
-<pin name="VBEN" x="7.62" y="-5.08" length="middle" rot="R90"/>
-<pin name="IRQ" x="10.16" y="-5.08" length="middle" rot="R90"/>
-<wire x1="-12.7" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
-<wire x1="12.7" y1="0" x2="12.7" y2="30.48" width="0.254" layer="94"/>
-<wire x1="12.7" y1="30.48" x2="-12.7" y2="30.48" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="30.48" x2="-12.7" y2="0" width="0.254" layer="94"/>
-<text x="-15.24" y="2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="15.24" y="2.54" size="1.778" layer="96" rot="MR90">&gt;VALUE</text>
-</symbol>
-<symbol name="ADAFRUIT-TFT1.8-BREAKOUT">
-<pin name="LITE" x="-12.7" y="-10.16" length="middle"/>
-<pin name="MISO" x="-12.7" y="-7.62" length="middle"/>
-<pin name="SCK" x="-12.7" y="-5.08" length="middle"/>
-<pin name="MOSI" x="-12.7" y="-2.54" length="middle"/>
-<pin name="TFT_CS" x="-12.7" y="0" length="middle"/>
-<pin name="CARD_CS" x="-12.7" y="2.54" length="middle"/>
-<pin name="D/C" x="-12.7" y="5.08" length="middle"/>
-<pin name="RESET" x="-12.7" y="7.62" length="middle"/>
-<pin name="VCC" x="-12.7" y="10.16" length="middle"/>
-<wire x1="-7.62" y1="-12.7" x2="25.4" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-12.7" x2="25.4" y2="15.24" width="0.254" layer="94"/>
-<wire x1="25.4" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
-<pin name="GND" x="-12.7" y="12.7" length="middle"/>
-<text x="-5.08" y="17.78" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="-15.24" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="ADAFRUIT-CC3000-BREAKOUT">
-<gates>
-<gate name="G$1" symbol="ADAFRUIT-CC3000-BREAKOUT" x="0" y="-12.7"/>
-</gates>
-<devices>
-<device name="" package="ADAFRUIT-CC3000-BREAKOUT">
-<connects>
-<connect gate="G$1" pin="3V3" pad="P2"/>
-<connect gate="G$1" pin="CLK" pad="P4"/>
-<connect gate="G$1" pin="CS" pad="P7"/>
-<connect gate="G$1" pin="GND" pad="P1"/>
-<connect gate="G$1" pin="IRQ" pad="P9"/>
-<connect gate="G$1" pin="MISO" pad="P5"/>
-<connect gate="G$1" pin="MOSI" pad="P6"/>
-<connect gate="G$1" pin="VBEN" pad="P8"/>
-<connect gate="G$1" pin="VIN" pad="P3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="ADAFRUIT-TFT1.8-BREAKOUT">
-<gates>
-<gate name="G$1" symbol="ADAFRUIT-TFT1.8-BREAKOUT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="ADAFRUIT-TFT1.8-BREAKOUT">
-<connects>
-<connect gate="G$1" pin="CARD_CS" pad="P$6"/>
-<connect gate="G$1" pin="D/C" pad="P$7"/>
-<connect gate="G$1" pin="GND" pad="P$10"/>
-<connect gate="G$1" pin="LITE" pad="P$1"/>
-<connect gate="G$1" pin="MISO" pad="P$2"/>
-<connect gate="G$1" pin="MOSI" pad="P$4"/>
-<connect gate="G$1" pin="RESET" pad="P$8"/>
-<connect gate="G$1" pin="SCK" pad="P$3"/>
-<connect gate="G$1" pin="TFT_CS" pad="P$5"/>
-<connect gate="G$1" pin="VCC" pad="P$9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6746,6 +6617,135 @@ Source: AVX .. aphvc.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Net Widget">
+<packages>
+<package name="ADAFRUIT-CC3000-BREAKOUT">
+<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="21" curve="90"/>
+<wire x1="3" y1="0" x2="23" y2="0" width="0" layer="21"/>
+<wire x1="23" y1="0" x2="26" y2="3" width="0" layer="21" curve="90"/>
+<wire x1="26" y1="3" x2="26" y2="37" width="0" layer="21"/>
+<wire x1="26" y1="37" x2="23" y2="40" width="0" layer="21" curve="90"/>
+<wire x1="23" y1="40" x2="3" y2="40" width="0" layer="21"/>
+<wire x1="3" y1="40" x2="0" y2="37" width="0" layer="21" curve="90"/>
+<wire x1="0" y1="37" x2="0" y2="3" width="0" layer="21"/>
+<pad name="P5" x="13" y="2" drill="1"/>
+<pad name="P4" x="10.46" y="2" drill="1"/>
+<pad name="P3" x="7.92" y="2" drill="1"/>
+<pad name="P2" x="5.38" y="2" drill="1"/>
+<pad name="P1" x="2.84" y="2" drill="1"/>
+<pad name="P6" x="15.54" y="2" drill="1"/>
+<pad name="P7" x="18.08" y="2" drill="1"/>
+<pad name="P8" x="20.62" y="2" drill="1"/>
+<pad name="P9" x="23.16" y="2" drill="1"/>
+</package>
+<package name="ADAFRUIT-TFT1.8-BREAKOUT">
+<wire x1="-25.4" y1="17.145" x2="-27.94" y2="14.605" width="0" layer="21" curve="90"/>
+<wire x1="-27.94" y1="14.605" x2="-27.94" y2="-14.605" width="0" layer="21"/>
+<wire x1="-27.94" y1="-14.605" x2="-25.4" y2="-17.145" width="0" layer="21" curve="90"/>
+<wire x1="-25.4" y1="-17.145" x2="25.4" y2="-17.145" width="0" layer="21"/>
+<wire x1="25.4" y1="-17.145" x2="27.94" y2="-14.605" width="0" layer="21" curve="90"/>
+<wire x1="27.94" y1="-14.605" x2="27.94" y2="14.605" width="0" layer="21"/>
+<wire x1="27.94" y1="14.605" x2="25.4" y2="17.145" width="0" layer="21" curve="90"/>
+<wire x1="25.4" y1="17.145" x2="-25.4" y2="17.145" width="0" layer="21"/>
+<pad name="P$1" x="-25.4" y="-11.43" drill="1" shape="octagon"/>
+<pad name="P$2" x="-25.4" y="-8.89" drill="1" shape="octagon"/>
+<pad name="P$3" x="-25.4" y="-6.35" drill="1" shape="octagon"/>
+<pad name="P$4" x="-25.4" y="-3.81" drill="1" shape="octagon"/>
+<pad name="P$5" x="-25.4" y="-1.27" drill="1" shape="octagon"/>
+<pad name="P$6" x="-25.4" y="1.27" drill="1" shape="octagon"/>
+<pad name="P$7" x="-25.4" y="3.81" drill="1" shape="octagon"/>
+<pad name="P$8" x="-25.4" y="6.35" drill="1" shape="octagon"/>
+<pad name="P$9" x="-25.4" y="8.89" drill="1" shape="octagon"/>
+<pad name="P$10" x="-25.4" y="11.43" drill="1" shape="octagon"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ADAFRUIT-CC3000-BREAKOUT">
+<pin name="GND" x="-10.16" y="-5.08" length="middle" rot="R90"/>
+<pin name="3V3" x="-7.62" y="-5.08" length="middle" rot="R90"/>
+<pin name="VIN" x="-5.08" y="-5.08" length="middle" rot="R90"/>
+<pin name="CLK" x="-2.54" y="-5.08" length="middle" rot="R90"/>
+<pin name="MISO" x="0" y="-5.08" length="middle" rot="R90"/>
+<pin name="MOSI" x="2.54" y="-5.08" length="middle" rot="R90"/>
+<pin name="CS" x="5.08" y="-5.08" length="middle" rot="R90"/>
+<pin name="VBEN" x="7.62" y="-5.08" length="middle" rot="R90"/>
+<pin name="IRQ" x="10.16" y="-5.08" length="middle" rot="R90"/>
+<wire x1="-12.7" y1="0" x2="12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="12.7" y1="0" x2="12.7" y2="30.48" width="0.254" layer="94"/>
+<wire x1="12.7" y1="30.48" x2="-12.7" y2="30.48" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="30.48" x2="-12.7" y2="0" width="0.254" layer="94"/>
+<text x="-15.24" y="2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="15.24" y="2.54" size="1.778" layer="96" rot="MR90">&gt;VALUE</text>
+</symbol>
+<symbol name="ADAFRUIT-TFT1.8-BREAKOUT">
+<pin name="LITE" x="-12.7" y="-10.16" length="middle"/>
+<pin name="MISO" x="-12.7" y="-7.62" length="middle"/>
+<pin name="SCK" x="-12.7" y="-5.08" length="middle"/>
+<pin name="MOSI" x="-12.7" y="-2.54" length="middle"/>
+<pin name="TFT_CS" x="-12.7" y="0" length="middle"/>
+<pin name="CARD_CS" x="-12.7" y="2.54" length="middle"/>
+<pin name="D/C" x="-12.7" y="5.08" length="middle"/>
+<pin name="RESET" x="-12.7" y="7.62" length="middle"/>
+<pin name="VCC" x="-12.7" y="10.16" length="middle"/>
+<wire x1="-7.62" y1="-12.7" x2="25.4" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-12.7" x2="25.4" y2="15.24" width="0.254" layer="94"/>
+<wire x1="25.4" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-12.7" width="0.254" layer="94"/>
+<pin name="GND" x="-12.7" y="12.7" length="middle"/>
+<text x="-5.08" y="17.78" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="-15.24" size="1.778" layer="96" rot="MR180">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ADAFRUIT-CC3000-BREAKOUT">
+<gates>
+<gate name="G$1" symbol="ADAFRUIT-CC3000-BREAKOUT" x="0" y="-12.7"/>
+</gates>
+<devices>
+<device name="" package="ADAFRUIT-CC3000-BREAKOUT">
+<connects>
+<connect gate="G$1" pin="3V3" pad="P2"/>
+<connect gate="G$1" pin="CLK" pad="P4"/>
+<connect gate="G$1" pin="CS" pad="P7"/>
+<connect gate="G$1" pin="GND" pad="P1"/>
+<connect gate="G$1" pin="IRQ" pad="P9"/>
+<connect gate="G$1" pin="MISO" pad="P5"/>
+<connect gate="G$1" pin="MOSI" pad="P6"/>
+<connect gate="G$1" pin="VBEN" pad="P8"/>
+<connect gate="G$1" pin="VIN" pad="P3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADAFRUIT-TFT1.8-BREAKOUT">
+<gates>
+<gate name="G$1" symbol="ADAFRUIT-TFT1.8-BREAKOUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ADAFRUIT-TFT1.8-BREAKOUT">
+<connects>
+<connect gate="G$1" pin="CARD_CS" pad="P$6"/>
+<connect gate="G$1" pin="D/C" pad="P$7"/>
+<connect gate="G$1" pin="GND" pad="P$10"/>
+<connect gate="G$1" pin="LITE" pad="P$1"/>
+<connect gate="G$1" pin="MISO" pad="P$2"/>
+<connect gate="G$1" pin="MOSI" pad="P$4"/>
+<connect gate="G$1" pin="RESET" pad="P$8"/>
+<connect gate="G$1" pin="SCK" pad="P$3"/>
+<connect gate="G$1" pin="TFT_CS" pad="P$5"/>
+<connect gate="G$1" pin="VCC" pad="P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -6759,8 +6759,8 @@ Source: AVX .. aphvc.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="adafruit" deviceset="ATMEGA32U4" device="-AU"/>
-<part name="U$2" library="Weather Widget" deviceset="ADAFRUIT-CC3000-BREAKOUT" device=""/>
-<part name="U$3" library="Weather Widget" deviceset="ADAFRUIT-TFT1.8-BREAKOUT" device=""/>
+<part name="U$2" library="Net Widget" deviceset="ADAFRUIT-CC3000-BREAKOUT" device=""/>
+<part name="U$3" library="Net Widget" deviceset="ADAFRUIT-TFT1.8-BREAKOUT" device=""/>
 <part name="ISP" library="adafruit" deviceset="AVRISP" device="-6"/>
 <part name="CN1" library="adafruit" deviceset="USB" device="MINIB"/>
 <part name="R1" library="rcl" deviceset="R-US_" device="R1206" value="22"/>

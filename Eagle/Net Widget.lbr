@@ -133,15 +133,15 @@
 <wire x1="23" y1="40" x2="3" y2="40" width="0" layer="21"/>
 <wire x1="3" y1="40" x2="0" y2="37" width="0" layer="21" curve="90"/>
 <wire x1="0" y1="37" x2="0" y2="3" width="0" layer="21"/>
-<pad name="P5" x="13" y="2" drill="0.8"/>
-<pad name="P4" x="10.46" y="2" drill="0.8"/>
-<pad name="P3" x="7.92" y="2" drill="0.8"/>
-<pad name="P2" x="5.38" y="2" drill="0.8"/>
-<pad name="P1" x="2.84" y="2" drill="0.8"/>
-<pad name="P6" x="15.54" y="2" drill="0.8"/>
-<pad name="P7" x="18.08" y="2" drill="0.8"/>
-<pad name="P8" x="20.62" y="2" drill="0.8"/>
-<pad name="P9" x="23.16" y="2" drill="0.8"/>
+<pad name="P5" x="13" y="2" drill="1"/>
+<pad name="P4" x="10.46" y="2" drill="1"/>
+<pad name="P3" x="7.92" y="2" drill="1"/>
+<pad name="P2" x="5.38" y="2" drill="1"/>
+<pad name="P1" x="2.84" y="2" drill="1"/>
+<pad name="P6" x="15.54" y="2" drill="1"/>
+<pad name="P7" x="18.08" y="2" drill="1"/>
+<pad name="P8" x="20.62" y="2" drill="1"/>
+<pad name="P9" x="23.16" y="2" drill="1"/>
 </package>
 <package name="ADAFRUIT-TFT1.8-BREAKOUT">
 <wire x1="-25.4" y1="17.145" x2="-27.94" y2="14.605" width="0" layer="21" curve="90"/>
@@ -152,16 +152,16 @@
 <wire x1="27.94" y1="-14.605" x2="27.94" y2="14.605" width="0" layer="21"/>
 <wire x1="27.94" y1="14.605" x2="25.4" y2="17.145" width="0" layer="21" curve="90"/>
 <wire x1="25.4" y1="17.145" x2="-25.4" y2="17.145" width="0" layer="21"/>
-<pad name="P$1" x="-25.4" y="-11.43" drill="0.8" shape="octagon"/>
-<pad name="P$2" x="-25.4" y="-8.89" drill="0.8" shape="octagon"/>
-<pad name="P$3" x="-25.4" y="-6.35" drill="0.8" shape="octagon"/>
-<pad name="P$4" x="-25.4" y="-3.81" drill="0.8" shape="octagon"/>
-<pad name="P$5" x="-25.4" y="-1.27" drill="0.8" shape="octagon"/>
-<pad name="P$6" x="-25.4" y="1.27" drill="0.8" shape="octagon"/>
-<pad name="P$7" x="-25.4" y="3.81" drill="0.8" shape="octagon"/>
-<pad name="P$8" x="-25.4" y="6.35" drill="0.8" shape="octagon"/>
-<pad name="P$9" x="-25.4" y="8.89" drill="0.8" shape="octagon"/>
-<pad name="P$10" x="-25.4" y="11.43" drill="0.8" shape="octagon"/>
+<pad name="P$1" x="-25.4" y="-11.43" drill="1" shape="octagon"/>
+<pad name="P$2" x="-25.4" y="-8.89" drill="1" shape="octagon"/>
+<pad name="P$3" x="-25.4" y="-6.35" drill="1" shape="octagon"/>
+<pad name="P$4" x="-25.4" y="-3.81" drill="1" shape="octagon"/>
+<pad name="P$5" x="-25.4" y="-1.27" drill="1" shape="octagon"/>
+<pad name="P$6" x="-25.4" y="1.27" drill="1" shape="octagon"/>
+<pad name="P$7" x="-25.4" y="3.81" drill="1" shape="octagon"/>
+<pad name="P$8" x="-25.4" y="6.35" drill="1" shape="octagon"/>
+<pad name="P$9" x="-25.4" y="8.89" drill="1" shape="octagon"/>
+<pad name="P$10" x="-25.4" y="11.43" drill="1" shape="octagon"/>
 </package>
 <package name="ABM3B">
 <smd name="P$1" x="-2" y="-1.2" dx="1.8" dy="1.2" layer="1"/>
