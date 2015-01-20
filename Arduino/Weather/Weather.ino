@@ -1,31 +1,32 @@
 #include <SPI.h>
 #include <Temboo.h>
 #include <Adafruit_CC3000.h>
-//#include <Adafruit_GFX.h>
-//#include <Adafruit_ST7735.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_ST7735.h>
 
 #include "TembooAccount.h"
 
 Adafruit_CC3000 cc3000(10, 3, 5); // CS, IRQ, VBEN
 Adafruit_CC3000_Client client;
-//Adafruit_ST7735 tft(4, 8, 9); // CS, Reset, DC
+Adafruit_ST7735 tft(7, 8, 9); // CS, Reset, DC
 unsigned long ip;
 
 void setup() {
   delay(3000);
   Serial.begin(9600);
+
+  // TFT backlight  
+  pinMode(6, OUTPUT);
+  digitalWrite(6, HIGH);
   
-//  pinMode(6, OUTPUT);
-//  digitalWrite(6, HIGH);
-//  
-//  tft.initR(INITR_BLACKTAB);
-//  tft.fillScreen(ST7735_BLACK);
-//  tft.setCursor(0, 0);
-//  tft.setTextColor(ST7735_WHITE);
-//  tft.setTextWrap(true);
+  tft.initR(INITR_BLACKTAB);
+  tft.fillScreen(ST7735_BLACK);
+  tft.setCursor(0, 0);
+  tft.setTextColor(ST7735_WHITE);
+  tft.setTextWrap(true);
   
   Serial.println("Hello.");
-//  tft.println("Hello.");
+  tft.println("Hello.");
   
   if (!cc3000.begin()) {
     Serial.println("cc3000.begin() failed.");
@@ -44,7 +45,7 @@ void setup() {
   }
   
   Serial.println("Connected.");
-//  tft.println("Connected.");
+  tft.println("Connected.");
 }
 
 
