@@ -28,10 +28,10 @@ as well as Adafruit raw 1.8" TFT display
 
 // For the breakout, you can use any 2 or 3 pins
 // These pins will also work for the 1.8" TFT shield
-#define TFT_CS     7
-#define TFT_RST    9  // you can also connect this to the Arduino reset
+#define TFT_CS     0
+#define TFT_RST    1  // you can also connect this to the Arduino reset
                       // in which case, set this #define pin to 0!
-#define TFT_DC     8
+#define TFT_DC     4
 
 // Option 1 (recommended): must use the hardware SPI pins
 // (for UNO thats sclk = 13 and sid = 11) and pin 10 must be
@@ -48,8 +48,8 @@ Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS,  TFT_DC, TFT_RST);
 float p = 3.1415926;
 
 void setup(void) {
-  pinMode(6, OUTPUT);
-  digitalWrite(6, HIGH);
+  pinMode(3, OUTPUT);
+  digitalWrite(3, HIGH);
   
   Serial.begin(9600);
   Serial.print("Hello! ST7735 TFT Test");
