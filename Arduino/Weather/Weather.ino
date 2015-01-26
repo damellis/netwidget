@@ -6,9 +6,9 @@
 
 #include "TembooAccount.h"
 
-Adafruit_CC3000 cc3000(10, 3, 5); // CS, IRQ, VBEN
+Adafruit_CC3000 cc3000(19, 2, 20); // CS, IRQ, VBEN
 Adafruit_CC3000_Client client;
-Adafruit_ST7735 tft(7, 8, 9); // CS, Reset, DC
+Adafruit_ST7735 tft(0, 4, 1); // CS, DC, Reset
 unsigned long ip;
 
 void setup() {
@@ -16,8 +16,8 @@ void setup() {
   Serial.begin(9600);
 
   // TFT backlight  
-  pinMode(6, OUTPUT);
-  digitalWrite(6, HIGH);
+  pinMode(3, OUTPUT);
+  digitalWrite(3, HIGH);
   
   tft.initR(INITR_BLACKTAB);
   tft.fillScreen(ST7735_BLACK);
