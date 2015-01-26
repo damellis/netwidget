@@ -25,15 +25,14 @@ void setup() {
   tft.setTextColor(ST7735_WHITE);
   tft.setTextWrap(true);
   
-  Serial.println("Hello.");
   tft.println("Hello.");
   
   if (!cc3000.begin()) {
-    Serial.println("cc3000.begin() failed.");
+    tft.println("cc3000.begin() failed.");
     while (1);
   }
   while (!cc3000.connectToAP("Mellis", "", WLAN_SEC_UNSEC)) {
-    Serial.println("cc3000.connectToAP() failed. retrying in 10 seconds.");
+    tft.println("cc3000.connectToAP() failed. retrying in 10 seconds.");
     delay(10000);
   }
   while(!cc3000.checkDHCP()) {
@@ -44,7 +43,6 @@ void setup() {
     delay(1000);
   }
   
-  Serial.println("Connected.");
   tft.println("Connected.");
 }
 
@@ -65,21 +63,66 @@ void loop() {
   // Set Choreo inputs
   String AddressValue = "Cambridge, MA";
   GetWeatherByAddressChoreo.addInput("Address", AddressValue);
+  
+  // Filter Choreo output
+  GetWeatherByAddressChoreo.addOutputFilter("date", "/rss/channel/item/yweather:forecast[1]/@date", "Response");
+  GetWeatherByAddressChoreo.addOutputFilter("low", "/rss/channel/item/yweather:forecast[1]/@low", "Response");
+  GetWeatherByAddressChoreo.addOutputFilter("high", "/rss/channel/item/yweather:forecast[1]/@high", "Response");
+  GetWeatherByAddressChoreo.addOutputFilter("text", "/rss/channel/item/yweather:forecast[1]/@text", "Response");
 
   // Identify the Choreo to run
   GetWeatherByAddressChoreo.setChoreo("/Library/Yahoo/Weather/GetWeatherByAddress");
 
   // Run the Choreo; when results are available, print them to serial
   GetWeatherByAddressChoreo.run();
+  
+  String low, high, date, text, code;
 
-  while(GetWeatherByAddressChoreo.available()) {
-    char c = GetWeatherByAddressChoreo.read();
-    Serial.print(c);
+  while (GetWeatherByAddressChoreo.available()) {
+    String key = GetWeatherByAddressChoreo.readStringUntil('\x1F');
+    String value = GetWeatherByAddressChoreo.readStringUntil('\x1E');
+    
+    key.trim(); value.trim();
+    
+    Serial.print(key);
+    Serial.print("\t");
+    Serial.print(value);
+    Serial.println();
+    
+    if (key == "low") low = value;
+    if (key == "high") high = value;
+    if (key == "text") text = value;
+    if (key == "date") date = value;
+    if (key == "HTTP_CODE") code = value;
   }
   GetWeatherByAddressChoreo.close();
-
-  Serial.println("\nWaiting...\n");
-  delay(30000); // wait 30 seconds between GetWeatherByAddress calls
+  
+  Serial.print(date);
+  Serial.print(": low ");
+  Serial.print(low);
+  Serial.print(", high ");
+  Serial.print(high);
+  Serial.println();
+  Serial.print("Conditions: ");
+  Serial.println(text);
+  Serial.print("HTTP code: ");
+  Serial.println(code);
+  
+  // if successful, print the new forecast.
+  if (code.equals("200")) {
+    tft.fillScreen(ST7735_BLACK);
+    tft.setTextColor(ST7735_WHITE);
+    tft.setTextWrap(true);
+    tft.setCursor(0, 0);  
+    tft.println(date.substring(0, date.lastIndexOf(" ")));
+    tft.print(low); tft.print("-"); tft.print(high); tft.print(" F"); tft.println();
+    tft.println(text);
+    delay(4L * 60 * 60 * 1000); // on success, wait four hours
+  } else {
+    tft.setCursor(0, 100);
+    tft.print(code);
+    delay(30L * 1000); // otherwise, wait 30 seconds
+  }
 }
 
 bool displayConnectionDetails(void)
