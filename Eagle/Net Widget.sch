@@ -7311,9 +7311,9 @@ Based on the following sources:&lt;p&gt;
 <pinref part="U$2" gate="G$1" pin="CS"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(TMS/PCINT19)PC3"/>
-<wire x1="83.82" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
-<label x="104.14" y="27.94" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC1" gate="G$1" pin="(XCK0/T0/PCINT8)PB0"/>
+<wire x1="83.82" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<label x="104.14" y="58.42" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="VBEN" class="0">
@@ -7323,9 +7323,9 @@ Based on the following sources:&lt;p&gt;
 <pinref part="U$2" gate="G$1" pin="VBEN"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(TDO/PCINT20)PC4"/>
-<wire x1="83.82" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
-<label x="104.14" y="25.4" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC1" gate="G$1" pin="(CLKO/T1/PCINT9)PB1"/>
+<wire x1="83.82" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
+<label x="104.14" y="55.88" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="IRQ" class="0">
