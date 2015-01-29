@@ -7090,8 +7090,8 @@ Based on the following sources:&lt;p&gt;
 <part name="JP5" library="Net Widget" deviceset="ARDUINO_SERIAL_PROGRAM" device="RA" value="FTDI"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="0.1uF"/>
 <part name="CN1" library="Net Widget" deviceset="USB" device="PWR"/>
-<part name="U1" library="Net Widget" deviceset="TMP36" device=""/>
-<part name="U2" library="Net Widget" deviceset="TMP36" device="GT9"/>
+<part name="U1" library="Net Widget" deviceset="TMP36" device="" value="TMP36"/>
+<part name="U2" library="Net Widget" deviceset="TMP36" device="GT9" value="TMP36"/>
 </parts>
 <sheets>
 <sheet>
