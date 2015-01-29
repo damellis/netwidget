@@ -1,0 +1,7 @@
+make clean
+
+make goldilocks
+OR
+make goldilocks_22
+
+make program

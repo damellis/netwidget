@@ -1,0 +1,5 @@
+#!/bin/bash
+make wildfire
+mv optiboot_wildfire.hex optiboot_wildfirev2.hex
+mv optiboot_wildfire.lst optiboot_wildfirev2.lst
+

@@ -1,0 +1,675 @@
+Archive member included because of file (symbol)
+
+/usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o)
+                              stk500boot.o (__divmodhi4)
+/usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodsi4.o)
+                              stk500boot.o (__udivmodsi4)
+/usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+                              /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o (exit)
+/usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+                              stk500boot.o (__do_copy_data)
+/usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+                              stk500boot.o (__do_clear_bss)
+/usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodhi4.o)
+                              /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o) (__udivmodhi4)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eerd_byte_atmega1284p.o)
+                              stk500boot.o (__eerd_byte_m1284p)
+/usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eeupd_byte_atmega1284p.o)
+                              stk500boot.o (__eeupd_byte_m1284p)
+
+Allocating common symbols
+Common symbol       size              file
+
+gEepromIndex        0x4               stk500boot.o
+gFlashIndex         0x4               stk500boot.o
+gRamIndex           0x4               stk500boot.o
+
+Discarded input sections
+
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodsi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodsi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodsi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+ .text.libgcc   0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodhi4.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodhi4.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodhi4.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eerd_byte_atmega1284p.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eerd_byte_atmega1284p.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eerd_byte_atmega1284p.o)
+ .text          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eeupd_byte_atmega1284p.o)
+ .data          0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eeupd_byte_atmega1284p.o)
+ .bss           0x0000000000000000        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eeupd_byte_atmega1284p.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x0000000000000000 0x0000000000020000 xr
+data             0x0000000000800100 0x000000000000ff00 rw !x
+eeprom           0x0000000000810000 0x0000000000010000 rw !x
+fuse             0x0000000000820000 0x0000000000000400 rw !x
+lock             0x0000000000830000 0x0000000000000400 rw !x
+signature        0x0000000000840000 0x0000000000000400 rw !x
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .data set to 0x800100
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+LOAD stk500boot.o
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libm.a
+Address of section .text set to 0x1e000
+LOAD /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a
+LOAD /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a
+LOAD /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x000000000001e000     0x1cdc
+ *(.vectors)
+ .vectors       0x000000000001e000       0x8c /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+                0x000000000001e000                __vectors
+                0x000000000001e000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+ .progmem.data  0x000000000001e08c      0x3c0 stk500boot.o
+                0x000000000001e08c                gAvrInt_RESET
+                0x000000000001e092                gAvrInt_INT0
+                0x000000000001e097                gAvrInt_INT1
+                0x000000000001e09c                gAvrInt_INT2
+                0x000000000001e0a1                gAvrInt_PCINT0
+                0x000000000001e0a8                gAvrInt_PCINT1
+                0x000000000001e0af                gAvrInt_PCINT2
+                0x000000000001e0b6                gAvrInt_PCINT3
+                0x000000000001e0bd                gAvrInt_WDT
+                0x000000000001e0c1                gAvrInt_TIMER0_COMPA
+                0x000000000001e0ce                gAvrInt_TIMER0_COMPB
+                0x000000000001e0db                gAvrInt_TIMER0_OVF
+                0x000000000001e0e6                gAvrInt_TIMER1_CAPT
+                0x000000000001e0f2                gAvrInt_TIMER1_COMPA
+                0x000000000001e0ff                gAvrInt_TIMER1_COMPB
+                0x000000000001e10c                gAvrInt_TIMER1_OVF
+                0x000000000001e117                gAvrInt_TIMER2_COMPA
+                0x000000000001e124                gAvrInt_TIMER2_COMPB
+                0x000000000001e131                gAvrInt_TIMER2_OVF
+                0x000000000001e13c                gAvrInt_TIMER3_CAPT
+                0x000000000001e148                gAvrInt_TIMER3_COMPA
+                0x000000000001e155                gAvrInt_TIMER3_COMPB
+                0x000000000001e162                gAvrInt_TIMER3_OVF
+                0x000000000001e16d                gAvrInt_USART0_RX
+                0x000000000001e177                gAvrInt_USART0_UDRE
+                0x000000000001e183                gAvrInt_USART0_TX
+                0x000000000001e18d                gAvrInt_USART1_RX
+                0x000000000001e197                gAvrInt_USART1_UDRE
+                0x000000000001e1a3                gAvrInt_USART1_TX
+                0x000000000001e1ad                gAvrInt_SPI_STC
+                0x000000000001e1b5                gAvrInt_ADC
+                0x000000000001e1b9                gAvrInt_ANALOG_COMP
+                0x000000000001e1c5                gAvrInt_EE_READY
+                0x000000000001e1ce                gAvrInt_TWI
+                0x000000000001e1d2                gAvrInt_SPM_READY
+                0x000000000001e1dc                gAvrInt_END
+                0x000000000001e1de                gInterruptNameTable
+                0x000000000001e224                gTextMsg_CPU_Name
+                0x000000000001e230                gTextMsg_Explorer
+                0x000000000001e24b                gTextMsg_Prompt
+                0x000000000001e257                gTextMsg_HUH
+                0x000000000001e25c                gTextMsg_COMPILED_ON
+                0x000000000001e26b                gTextMsg_CPU_Type
+                0x000000000001e27a                gTextMsg_AVR_ARCH
+                0x000000000001e289                gTextMsg_AVR_LIBC
+                0x000000000001e298                gTextMsg_GCC_VERSION
+                0x000000000001e2a7                gTextMsg_CPU_SIGNATURE
+                0x000000000001e2b6                gTextMsg_FUSE_BYTE_LOW
+                0x000000000001e2c5                gTextMsg_FUSE_BYTE_HIGH
+                0x000000000001e2d4                gTextMsg_FUSE_BYTE_EXT
+                0x000000000001e2e3                gTextMsg_FUSE_BYTE_LOCK
+                0x000000000001e2f2                gTextMsg_GCC_DATE_STR
+                0x000000000001e2fe                gTextMsg_AVR_LIBC_VER_STR
+                0x000000000001e304                gTextMsg_GCC_VERSION_STR
+                0x000000000001e30a                gTextMsg_VECTOR_HEADER
+                0x000000000001e33f                gTextMsg_noVector
+                0x000000000001e349                gTextMsg_rjmp
+                0x000000000001e350                gTextMsg_jmp
+                0x000000000001e355                gTextMsg_WHAT_PORT
+                0x000000000001e360                gTextMsg_PortNotSupported
+                0x000000000001e373                gTextMsg_MustBeLetter
+                0x000000000001e384                gTextMsg_SPACE
+                0x000000000001e386                gTextMsg_WriteToEEprom
+                0x000000000001e391                gTextMsg_ReadingEEprom
+                0x000000000001e39c                gTextMsg_EEPROMerrorCnt
+                0x000000000001e3a8                gTextMsg_PORT
+                0x000000000001e3ad                gTextMsg_HELP_MSG_0
+                0x000000000001e3b9                gTextMsg_HELP_MSG_QM
+                0x000000000001e3c5                gTextMsg_HELP_MSG_AT
+                0x000000000001e3d3                gTextMsg_HELP_MSG_B
+                0x000000000001e3df                gTextMsg_HELP_MSG_E
+                0x000000000001e3ed                gTextMsg_HELP_MSG_F
+                0x000000000001e3fa                gTextMsg_HELP_MSG_H
+                0x000000000001e401                gTextMsg_HELP_MSG_L
+                0x000000000001e412                gTextMsg_HELP_MSG_Q
+                0x000000000001e419                gTextMsg_HELP_MSG_R
+                0x000000000001e424                gTextMsg_HELP_MSG_V
+                0x000000000001e43d                gTextMsg_HELP_MSG_Y
+                0x000000000001e44a                gTextMsg_END
+                0x000000000001e44c                . = ALIGN (0x2)
+                0x000000000001e44c                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x000000000001e44c        0x0 linker stubs
+ *(.trampolines*)
+                0x000000000001e44c                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x000000000001e44c                __ctors_start = .
+ *(.ctors)
+                0x000000000001e44c                __ctors_end = .
+                0x000000000001e44c                __dtors_start = .
+ *(.dtors)
+                0x000000000001e44c                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x000000000001e44c        0x0 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+                0x000000000001e44c                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x000000000001e44c        0xc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x000000000001e458       0x1a /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+                0x000000000001e458                __do_copy_data
+ .init4         0x000000000001e472       0x10 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+                0x000000000001e472                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x000000000001e482        0x6 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+ .init9         0x000000000001e488        0xe stk500boot.o
+                0x000000000001e488                __jumpMain
+ *(.init9)
+ *(.text)
+ .text          0x000000000001e496        0x2 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+                0x000000000001e496                __vector_22
+                0x000000000001e496                __vector_28
+                0x000000000001e496                __vector_1
+                0x000000000001e496                __vector_32
+                0x000000000001e496                __vector_34
+                0x000000000001e496                __vector_24
+                0x000000000001e496                __vector_12
+                0x000000000001e496                __bad_interrupt
+                0x000000000001e496                __vector_6
+                0x000000000001e496                __vector_31
+                0x000000000001e496                __vector_3
+                0x000000000001e496                __vector_23
+                0x000000000001e496                __vector_30
+                0x000000000001e496                __vector_25
+                0x000000000001e496                __vector_11
+                0x000000000001e496                __vector_13
+                0x000000000001e496                __vector_17
+                0x000000000001e496                __vector_19
+                0x000000000001e496                __vector_7
+                0x000000000001e496                __vector_27
+                0x000000000001e496                __vector_5
+                0x000000000001e496                __vector_33
+                0x000000000001e496                __vector_4
+                0x000000000001e496                __vector_9
+                0x000000000001e496                __vector_2
+                0x000000000001e496                __vector_21
+                0x000000000001e496                __vector_15
+                0x000000000001e496                __vector_29
+                0x000000000001e496                __vector_8
+                0x000000000001e496                __vector_26
+                0x000000000001e496                __vector_14
+                0x000000000001e496                __vector_10
+                0x000000000001e496                __vector_16
+                0x000000000001e496                __vector_18
+                0x000000000001e496                __vector_20
+ .text          0x000000000001e498     0x177a stk500boot.o
+                0x000000000001e498                PrintFromPROGMEM
+                0x000000000001e4e2                PrintNewLine
+                0x000000000001e53c                PrintFromPROGMEMln
+                0x000000000001e540                PrintString
+                0x000000000001e568                PrintHexByte
+                0x000000000001e75e                PrintDecInt
+                0x000000000001e7ea                main
+                0x000000000001fc12                . = ALIGN (0x2)
+ *(.text.*)
+ .text.libgcc   0x000000000001fc12       0x26 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o)
+                0x000000000001fc12                __divmodhi4
+                0x000000000001fc12                _div
+ .text.libgcc   0x000000000001fc38       0x44 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodsi4.o)
+                0x000000000001fc38                __udivmodsi4
+ .text.libgcc   0x000000000001fc7c       0x28 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodhi4.o)
+                0x000000000001fc7c                __udivmodhi4
+ .text.avr-libc
+                0x000000000001fca4       0x10 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eerd_byte_atmega1284p.o)
+                0x000000000001fca4                __eerd_byte_m1284p
+ .text.avr-libc
+                0x000000000001fcb4       0x24 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eeupd_byte_atmega1284p.o)
+                0x000000000001fcb4                __eeupd_byte_m1284p
+                0x000000000001fcb6                __eeupd_r18_m1284p
+                0x000000000001fcd8                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x000000000001fcd8        0x0 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+                0x000000000001fcd8                exit
+                0x000000000001fcd8                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x000000000001fcd8        0x4 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+ *(.fini0)
+                0x000000000001fcdc                _etext = .
+
+.data           0x0000000000800100       0x14 load address 0x000000000001fcdc
+                0x0000000000800100                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x0000000000800100       0x13 stk500boot.o
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x0000000000800114                . = ALIGN (0x2)
+ *fill*         0x0000000000800113        0x1 00
+                0x0000000000800114                _edata = .
+                0x0000000000800114                PROVIDE (__data_end, .)
+
+.bss            0x0000000000800114        0xe
+                0x0000000000800114                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x0000000000800114        0x2 stk500boot.o
+                0x0000000000800114                app_start
+ *(.bss*)
+ *(COMMON)
+ COMMON         0x0000000000800116        0xc stk500boot.o
+                0x0000000000800116                gEepromIndex
+                0x000000000080011a                gFlashIndex
+                0x000000000080011e                gRamIndex
+                0x0000000000800122                PROVIDE (__bss_end, .)
+                0x000000000001fcdc                __data_load_start = LOADADDR (.data)
+                0x000000000001fcf0                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x0000000000800122        0x0
+                0x0000000000800122                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x0000000000800122                PROVIDE (__noinit_end, .)
+                0x0000000000800122                _end = .
+                0x0000000000800122                PROVIDE (__heap_start, .)
+
+.eeprom         0x0000000000810000        0x0
+ *(.eeprom*)
+                0x0000000000810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x0000000000000000     0x3abc
+ *(.stab)
+ .stab          0x0000000000000000      0x6cc /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+ .stab          0x00000000000006cc     0x324c stk500boot.o
+                                       0x3258 (size before relaxing)
+ .stab          0x0000000000003918       0x90 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eerd_byte_atmega1284p.o)
+                                         0x9c (size before relaxing)
+ .stab          0x00000000000039a8      0x114 /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eeupd_byte_atmega1284p.o)
+                                        0x120 (size before relaxing)
+
+.stabstr        0x0000000000000000     0x18ac
+ *(.stabstr)
+ .stabstr       0x0000000000000000     0x18ac /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(stk500boot_v2_1284p.elf elf32-avr)
+LOAD linker stubs
+
+Cross Reference Table
+
+Symbol                                            File
+PrintDecInt                                       stk500boot.o
+PrintFromPROGMEM                                  stk500boot.o
+PrintFromPROGMEMln                                stk500boot.o
+PrintHexByte                                      stk500boot.o
+PrintNewLine                                      stk500boot.o
+PrintString                                       stk500boot.o
+__bad_interrupt                                   /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__bss_end                                         /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+__bss_start                                       /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+__data_end                                        /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+__data_load_start                                 /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+__data_start                                      /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+__divmodhi4                                       /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o)
+                                                  stk500boot.o
+__do_clear_bss                                    /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_clear_bss.o)
+                                                  stk500boot.o
+__do_copy_data                                    /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_copy_data.o)
+                                                  stk500boot.o
+__eerd_byte_m1284p                                /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eerd_byte_atmega1284p.o)
+                                                  stk500boot.o
+__eeupd_byte_m1284p                               /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eeupd_byte_atmega1284p.o)
+                                                  stk500boot.o
+__eeupd_r18_m1284p                                /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/libc.a(eeupd_byte_atmega1284p.o)
+__heap_end                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__init                                            /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__jumpMain                                        stk500boot.o
+__stack                                           /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__udivmodhi4                                      /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodhi4.o)
+                                                  /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o)
+__udivmodsi4                                      /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_udivmodsi4.o)
+                                                  stk500boot.o
+__vector_1                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_10                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_11                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_12                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_13                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_14                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_15                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_16                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_17                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_18                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_19                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_2                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_20                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_21                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_22                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_23                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_24                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_25                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_26                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_27                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_28                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_29                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_3                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_30                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_31                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_32                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_33                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_34                                       /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_4                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_5                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_6                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_7                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_8                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_9                                        /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vector_default                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+__vectors                                         /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+_div                                              /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_divmodhi4.o)
+_exit                                             /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+app_start                                         stk500boot.o
+exit                                              /usr/lib/gcc/avr/4.5.3/avr51/libgcc.a(_exit.o)
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
+gAvrInt_ADC                                       stk500boot.o
+gAvrInt_ANALOG_COMP                               stk500boot.o
+gAvrInt_EE_READY                                  stk500boot.o
+gAvrInt_END                                       stk500boot.o
+gAvrInt_INT0                                      stk500boot.o
+gAvrInt_INT1                                      stk500boot.o
+gAvrInt_INT2                                      stk500boot.o
+gAvrInt_PCINT0                                    stk500boot.o
+gAvrInt_PCINT1                                    stk500boot.o
+gAvrInt_PCINT2                                    stk500boot.o
+gAvrInt_PCINT3                                    stk500boot.o
+gAvrInt_RESET                                     stk500boot.o
+gAvrInt_SPI_STC                                   stk500boot.o
+gAvrInt_SPM_READY                                 stk500boot.o
+gAvrInt_TIMER0_COMPA                              stk500boot.o
+gAvrInt_TIMER0_COMPB                              stk500boot.o
+gAvrInt_TIMER0_OVF                                stk500boot.o
+gAvrInt_TIMER1_CAPT                               stk500boot.o
+gAvrInt_TIMER1_COMPA                              stk500boot.o
+gAvrInt_TIMER1_COMPB                              stk500boot.o
+gAvrInt_TIMER1_OVF                                stk500boot.o
+gAvrInt_TIMER2_COMPA                              stk500boot.o
+gAvrInt_TIMER2_COMPB                              stk500boot.o
+gAvrInt_TIMER2_OVF                                stk500boot.o
+gAvrInt_TIMER3_CAPT                               stk500boot.o
+gAvrInt_TIMER3_COMPA                              stk500boot.o
+gAvrInt_TIMER3_COMPB                              stk500boot.o
+gAvrInt_TIMER3_OVF                                stk500boot.o
+gAvrInt_TWI                                       stk500boot.o
+gAvrInt_USART0_RX                                 stk500boot.o
+gAvrInt_USART0_TX                                 stk500boot.o
+gAvrInt_USART0_UDRE                               stk500boot.o
+gAvrInt_USART1_RX                                 stk500boot.o
+gAvrInt_USART1_TX                                 stk500boot.o
+gAvrInt_USART1_UDRE                               stk500boot.o
+gAvrInt_WDT                                       stk500boot.o
+gEepromIndex                                      stk500boot.o
+gFlashIndex                                       stk500boot.o
+gInterruptNameTable                               stk500boot.o
+gRamIndex                                         stk500boot.o
+gTextMsg_AVR_ARCH                                 stk500boot.o
+gTextMsg_AVR_LIBC                                 stk500boot.o
+gTextMsg_AVR_LIBC_VER_STR                         stk500boot.o
+gTextMsg_COMPILED_ON                              stk500boot.o
+gTextMsg_CPU_Name                                 stk500boot.o
+gTextMsg_CPU_SIGNATURE                            stk500boot.o
+gTextMsg_CPU_Type                                 stk500boot.o
+gTextMsg_EEPROMerrorCnt                           stk500boot.o
+gTextMsg_END                                      stk500boot.o
+gTextMsg_Explorer                                 stk500boot.o
+gTextMsg_FUSE_BYTE_EXT                            stk500boot.o
+gTextMsg_FUSE_BYTE_HIGH                           stk500boot.o
+gTextMsg_FUSE_BYTE_LOCK                           stk500boot.o
+gTextMsg_FUSE_BYTE_LOW                            stk500boot.o
+gTextMsg_GCC_DATE_STR                             stk500boot.o
+gTextMsg_GCC_VERSION                              stk500boot.o
+gTextMsg_GCC_VERSION_STR                          stk500boot.o
+gTextMsg_HELP_MSG_0                               stk500boot.o
+gTextMsg_HELP_MSG_AT                              stk500boot.o
+gTextMsg_HELP_MSG_B                               stk500boot.o
+gTextMsg_HELP_MSG_E                               stk500boot.o
+gTextMsg_HELP_MSG_F                               stk500boot.o
+gTextMsg_HELP_MSG_H                               stk500boot.o
+gTextMsg_HELP_MSG_L                               stk500boot.o
+gTextMsg_HELP_MSG_Q                               stk500boot.o
+gTextMsg_HELP_MSG_QM                              stk500boot.o
+gTextMsg_HELP_MSG_R                               stk500boot.o
+gTextMsg_HELP_MSG_V                               stk500boot.o
+gTextMsg_HELP_MSG_Y                               stk500boot.o
+gTextMsg_HUH                                      stk500boot.o
+gTextMsg_MustBeLetter                             stk500boot.o
+gTextMsg_PORT                                     stk500boot.o
+gTextMsg_PortNotSupported                         stk500boot.o
+gTextMsg_Prompt                                   stk500boot.o
+gTextMsg_ReadingEEprom                            stk500boot.o
+gTextMsg_SPACE                                    stk500boot.o
+gTextMsg_VECTOR_HEADER                            stk500boot.o
+gTextMsg_WHAT_PORT                                stk500boot.o
+gTextMsg_WriteToEEprom                            stk500boot.o
+gTextMsg_jmp                                      stk500boot.o
+gTextMsg_noVector                                 stk500boot.o
+gTextMsg_rjmp                                     stk500boot.o
+main                                              stk500boot.o
+                                                  /usr/lib/gcc/avr/4.5.3/../../../avr/lib/avr51/crtm1284p.o
