@@ -6,7 +6,7 @@ wildfireo3.bootloader.low_fuses=0xf7
 wildfireo3.bootloader.high_fuses=0xde
 wildfireo3.bootloader.extended_fuses=0xfd
 wildfireo3.bootloader.path=optiboot
-wildfireo3.bootloader.file=optiboot_wildfirev2.hex
+wildfireo3.bootloader.file=optiboot/optiboot_wildfirev2.hex
 wildfireo3.bootloader.unlock_bits=0x3F
 wildfireo3.bootloader.lock_bits=0x0F
 wildfireo3.build.mcu=atmega1284p
@@ -14,8 +14,8 @@ wildfireo3.build.f_cpu=16000000L
 wildfireo3.build.core=arduino:arduino
 wildfireo3.build.variant=wildfirev3
 wildfireo3.build.board=WILDFIRE_V3
-wildfireo3.upload.tool=avrdude
-wildfireo3.bootloader.tool=avrdude
+wildfireo3.upload.tool=arduino:avrdude
+wildfireo3.bootloader.tool=arduino:avrdude
 
 #####################################
 
