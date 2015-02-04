@@ -33,6 +33,6 @@ wildfirev2.build.f_cpu=16000000L
 wildfirev2.build.board=WILDFIRE_V2
 wildfirev2.build.core=arduino:arduino
 wildfirev2.build.variant=wildfirev2
-wildfirev2.upload.tool=avrdude
-wildfirev2.bootloader.tool=avrdude
+wildfirev2.upload.tool=arduino:avrdude
+wildfirev2.bootloader.tool=arduino:avrdude
 
