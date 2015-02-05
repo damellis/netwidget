@@ -22,8 +22,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -38,7 +38,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
@@ -74,6 +74,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="no" active="yes"/>
+<layer number="114" name="AcrylicBase" color="13" fill="1" visible="no" active="yes"/>
+<layer number="115" name="AcrylicTop" color="14" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -149,6 +151,42 @@
 <vertex x="53.6575" y="22.86"/>
 <vertex x="48.26" y="22.86"/>
 </polygon>
+<wire x1="0" y1="45.72" x2="76.2" y2="45.72" width="0" layer="114"/>
+<wire x1="76.2" y1="45.72" x2="76.2" y2="0" width="0" layer="114"/>
+<wire x1="76.2" y1="0" x2="67.31" y2="0" width="0" layer="114"/>
+<wire x1="49.53" y1="0" x2="43.815" y2="0" width="0" layer="114"/>
+<wire x1="32.385" y1="0" x2="0" y2="0" width="0" layer="114"/>
+<wire x1="0" y1="0" x2="0" y2="45.72" width="0" layer="114"/>
+<wire x1="4.1275" y1="44.1325" x2="30.7975" y2="44.1325" width="0" layer="114"/>
+<wire x1="30.7975" y1="44.1325" x2="30.7975" y2="2.8575" width="0" layer="114"/>
+<wire x1="30.7975" y1="2.8575" x2="4.1275" y2="2.8575" width="0" layer="114"/>
+<wire x1="4.1275" y1="2.8575" x2="4.1275" y2="44.1325" width="0" layer="114"/>
+<wire x1="32.385" y1="0" x2="43.815" y2="0" width="0" layer="114"/>
+<wire x1="43.815" y1="0" x2="43.815" y2="12.3825" width="0" layer="114"/>
+<wire x1="43.815" y1="12.3825" x2="32.385" y2="12.3825" width="0" layer="114"/>
+<wire x1="32.385" y1="12.3825" x2="32.385" y2="0" width="0" layer="114"/>
+<wire x1="49.53" y1="0" x2="67.31" y2="0" width="0" layer="114"/>
+<wire x1="67.31" y1="0" x2="67.31" y2="13.97" width="0" layer="114"/>
+<wire x1="67.31" y1="13.97" x2="49.53" y2="13.97" width="0" layer="114"/>
+<wire x1="49.53" y1="13.97" x2="49.53" y2="0" width="0" layer="114"/>
+<wire x1="40.64" y1="16.51" x2="63.5" y2="16.51" width="0" layer="114"/>
+<wire x1="63.5" y1="16.51" x2="63.5" y2="38.1" width="0" layer="114"/>
+<wire x1="63.5" y1="38.1" x2="45.72" y2="38.1" width="0" layer="114"/>
+<wire x1="45.72" y1="38.1" x2="45.72" y2="22.86" width="0" layer="114"/>
+<wire x1="45.72" y1="22.86" x2="40.64" y2="22.86" width="0" layer="114"/>
+<wire x1="40.64" y1="22.86" x2="40.64" y2="16.51" width="0" layer="114"/>
+<wire x1="67.31" y1="33.02" x2="74.93" y2="33.02" width="0" layer="114"/>
+<wire x1="74.93" y1="33.02" x2="74.93" y2="15.24" width="0" layer="114"/>
+<wire x1="74.93" y1="15.24" x2="67.31" y2="15.24" width="0" layer="114"/>
+<wire x1="67.31" y1="15.24" x2="67.31" y2="33.02" width="0" layer="114"/>
+<wire x1="0" y1="0" x2="76.2" y2="0" width="0" layer="115"/>
+<wire x1="76.2" y1="0" x2="76.2" y2="45.72" width="0" layer="115"/>
+<wire x1="76.2" y1="45.72" x2="0" y2="45.72" width="0" layer="115"/>
+<wire x1="0" y1="45.72" x2="0" y2="0" width="0" layer="115"/>
+<wire x1="67.31" y1="33.02" x2="74.93" y2="33.02" width="0" layer="115"/>
+<wire x1="74.93" y1="33.02" x2="74.93" y2="15.24" width="0" layer="115"/>
+<wire x1="74.93" y1="15.24" x2="67.31" y2="15.24" width="0" layer="115"/>
+<wire x1="67.31" y1="15.24" x2="67.31" y2="33.02" width="0" layer="115"/>
 </plain>
 <libraries>
 <library name="rcl">
