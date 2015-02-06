@@ -26,11 +26,11 @@ SmartConfig is still beta and kind of works but is not fully vetted!
 It might not work on all networks!
 */
 #include <Adafruit_CC3000.h>
+#include <ccspi.h>
 #include <SPI.h>
 #include <string.h>
 #include "utility/debug.h"
 
-#include <Phant.h>
 #include "config.h"
 
 // These are the interrupt and control pins
@@ -43,15 +43,13 @@ It might not work on all networks!
 Adafruit_CC3000 cc3000 = Adafruit_CC3000(ADAFRUIT_CC3000_CS, ADAFRUIT_CC3000_IRQ, ADAFRUIT_CC3000_VBAT,
                                          SPI_CLOCK_DIVIDER); // you can change this clock speed
 
-Phant phant("data.sparkfun.com", SPARKFUN_PUBLIC_KEY, SPARKFUN_PRIVATE_KEY);
-
 #define IDLE_TIMEOUT_MS  3000      // Amount of time to wait (in milliseconds) with no data 
                                    // received before closing the connection.  If you know the server
                                    // you're accessing is quick to respond, you can reduce this value.
 
 // What page to grab!
 #define WEBSITE      "data.sparkfun.com"
-
+#define WEBPAGE      "/input/"
 
 /**************************************************************************/
 /*!
@@ -61,7 +59,6 @@ Phant phant("data.sparkfun.com", SPARKFUN_PUBLIC_KEY, SPARKFUN_PRIVATE_KEY);
 /**************************************************************************/
 
 uint32_t ip;
-String url;
 
 void setup(void)
 {
@@ -120,8 +117,6 @@ void loop(void)
   int voltage = map(sensorValue, 0, 1024, 0, 5000); // in mV (i.e. 5000 is 5V)
   float temperature = map(voltage, 750, 1000, 250, 500) / 10.0; // 750 mV is 25C
   
-  phant.add("temp", temperature);
-
   // Optional: Do a ping test on the website
   /*
   Serial.print(F("\n\rPinging ")); cc3000.printIPdotsRev(ip); Serial.print("...");  
@@ -132,17 +127,19 @@ void loop(void)
   /* Try connecting to the website.
      Note: HTTP/1.1 protocol is used to keep the server from closing the connection before all data is read.
   */
-  url = phant.post();
-  Serial.println(url);
-  Serial.println(F("Connecting..."));
   Adafruit_CC3000_Client www = cc3000.connectTCP(ip, 80);
   if (www.connected()) {
-    Serial.println(F("Connected."));
-    for (int i = 0; i < url.length(); i++) {
-      www.print(url[i]);
-      delay(10);
-    }
-    Serial.println(F("Printed."));    
+    www.fastrprint(F("GET "));
+    www.fastrprint(WEBPAGE);
+    www.fastrprint(SPARKFUN_PUBLIC_KEY);
+    www.fastrprint(F("?private_key="));
+    www.fastrprint(SPARKFUN_PRIVATE_KEY);
+    www.fastrprint(F("&temp="));
+    www.print(temperature);
+    www.fastrprint(F(" HTTP/1.1\r\n"));
+    www.fastrprint(F("Host: ")); www.fastrprint(WEBSITE); www.fastrprint(F("\r\n"));
+    www.fastrprint(F("\r\n"));
+    www.println();
   } else {
     Serial.println(F("Connection failed"));    
     return;
