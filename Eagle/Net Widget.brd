@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.1.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8,21 +8,21 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -74,6 +74,8 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="113" name="IDFDebug" color="7" fill="1" visible="no" active="yes"/>
+<layer number="114" name="AcrylicBase" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="AcrylicTop" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -176,6 +178,32 @@
 <text x="16.1925" y="5.715" size="1.27" layer="25" font="fixed">+</text>
 <text x="40.3225" y="3.175" size="1.27" layer="26" font="fixed" rot="MR0">B</text>
 <text x="57.15" y="3.175" size="1.27" layer="26" font="fixed" rot="MR0">G</text>
+<wire x1="7.3025" y1="40.64" x2="58.42" y2="40.64" width="0" layer="114"/>
+<wire x1="4.445" y1="7.62" x2="4.445" y2="7.9375" width="0" layer="114"/>
+<wire x1="4.445" y1="7.9375" x2="4.445" y2="38.1" width="0" layer="114"/>
+<wire x1="7.62" y1="5.08" x2="40.64" y2="5.08" width="0" layer="114"/>
+<wire x1="55.88" y1="5.08" x2="58.7375" y2="5.08" width="0" layer="114"/>
+<wire x1="61.595" y1="7.62" x2="61.595" y2="37.465" width="0" layer="114"/>
+<wire x1="7.62" y1="5.08" x2="4.445" y2="7.9375" width="0" layer="114" curve="-103.37444"/>
+<wire x1="4.445" y1="38.1" x2="7.3025" y2="40.64" width="0" layer="114" curve="-90"/>
+<wire x1="58.42" y1="40.64" x2="61.595" y2="37.465" width="0" layer="114" curve="-90"/>
+<wire x1="61.595" y1="7.62" x2="58.7375" y2="5.08" width="0" layer="114" curve="-90"/>
+<wire x1="0" y1="45.72" x2="66.04" y2="45.72" width="0" layer="114"/>
+<wire x1="66.04" y1="45.72" x2="66.04" y2="0" width="0" layer="114"/>
+<wire x1="66.04" y1="0" x2="0" y2="0" width="0" layer="114"/>
+<wire x1="0" y1="0" x2="0" y2="45.72" width="0" layer="114"/>
+<wire x1="44.45" y1="43.18" x2="52.07" y2="43.18" width="0" layer="114"/>
+<wire x1="52.07" y1="43.18" x2="52.07" y2="38.1" width="0" layer="114"/>
+<wire x1="52.07" y1="38.1" x2="44.45" y2="38.1" width="0" layer="114"/>
+<wire x1="44.45" y1="38.1" x2="44.45" y2="43.18" width="0" layer="114"/>
+<wire x1="40.64" y1="5.08" x2="55.88" y2="5.08" width="0" layer="114"/>
+<wire x1="55.88" y1="5.08" x2="55.88" y2="2.54" width="0" layer="114"/>
+<wire x1="55.88" y1="2.54" x2="40.64" y2="2.54" width="0" layer="114"/>
+<wire x1="40.64" y1="2.54" x2="40.64" y2="5.08" width="0" layer="114"/>
+<wire x1="0" y1="45.72" x2="66.04" y2="45.72" width="0" layer="115"/>
+<wire x1="66.04" y1="45.72" x2="66.04" y2="0" width="0" layer="115"/>
+<wire x1="66.04" y1="0" x2="0" y2="0" width="0" layer="115"/>
+<wire x1="0" y1="0" x2="0" y2="45.72" width="0" layer="115"/>
 </plain>
 <libraries>
 <library name="rcl">
