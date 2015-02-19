@@ -25,30 +25,49 @@ void setup() {
   tft.setTextColor(ST7735_WHITE);
   tft.setTextWrap(true);
   
-  tft.println("Hello.");
+  tft.println(F("Hello."));
+  Serial.println(F("Hello."));
   
+  tft.println(F("Initializing CC3000..."));
+  Serial.println(F("Initializing CC3000..."));
+
   if (!cc3000.begin()) {
-    tft.println("cc3000.begin() failed.");
+    tft.println(F("cc3000.begin() failed."));
+    Serial.println(F("cc3000.begin() failed."));
     while (1);
   }
-  while (!cc3000.connectToAP("Mellis", "", WLAN_SEC_UNSEC)) {
-    tft.println("cc3000.connectToAP() failed. retrying in 10 seconds.");
+  
+  tft.print(F("Connecting to ")); tft.println(WIFI_SSID); tft.println(F("..."));
+  Serial.print(F("Connecting to ")); Serial.println(WIFI_SSID); Serial.println(F("..."));
+  
+  while (!cc3000.connectToAP(WIFI_SSID, WIFI_PASS, WIFI_SEC)) {
+    tft.println(F("cc3000.connectToAP() failed. retrying in 10 seconds."));
+    Serial.println(F("cc3000.connectToAP() failed. retrying in 10 seconds."));
     delay(10000);
   }
+  
+  tft.print(F("Getting IP addresss..."));
+  Serial.print(F("Getting IP addresss..."));
   while(!cc3000.checkDHCP()) {
+    tft.print(".");
+    Serial.print(".");
     delay(100);
   }
+  tft.println();
+  Serial.println();
+  
   /* Display the IP address DNS, Gateway, etc. */  
   while (!displayConnectionDetails()) {
     delay(1000);
   }
   
-  tft.println("Connected.");
+  tft.println(F("Connected."));
 }
 
 
 void loop() {
-  Serial.println("Running GetWeatherByAddress");
+  Serial.println(F("Running GetWeatherByAddress"));
+  tft.println(F("Weather..."));
 
   TembooChoreo GetWeatherByAddressChoreo(client);
 
@@ -72,9 +91,13 @@ void loop() {
 
   // Identify the Choreo to run
   GetWeatherByAddressChoreo.setChoreo("/Library/Yahoo/Weather/GetWeatherByAddress");
+  
+  tft.println("run()");
 
   // Run the Choreo; when results are available, print them to serial
   GetWeatherByAddressChoreo.run();
+  
+  tft.println("done.");
   
   String low, high, date, text, code;
 
@@ -108,8 +131,11 @@ void loop() {
   Serial.print("HTTP code: ");
   Serial.println(code);
   
+  tft.println("Weather!");
+  
   // if successful, print the new forecast.
   if (code.equals("200")) {
+    Serial.println("Success!");
     tft.fillScreen(ST7735_BLACK);
     tft.setTextColor(ST7735_WHITE);
     tft.setTextWrap(true);
