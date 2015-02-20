@@ -7309,8 +7309,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="U$2" library="Net Widget" deviceset="ADAFRUIT-CC3000-BREAKOUT" device="RA" value="ADAFRUIT-CC3000-BREAKOUTRA"/>
 <part name="U$3" library="Net Widget" deviceset="ADAFRUIT-TFT1.8-BREAKOUT" device="-RA" value="ADAFRUIT-TFT1.8-BREAKOUT-RA"/>
 <part name="ISP" library="adafruit" deviceset="AVRISP" device="-6"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="18pF"/>
-<part name="C3" library="rcl" deviceset="C-EU" device="C1206" value="18pF"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="8pF"/>
+<part name="C3" library="rcl" deviceset="C-EU" device="C1206" value="8pF"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C1206" value="10uF"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C1206" value="0.1uF"/>
 <part name="16MHZ" library="Net Widget" deviceset="CRYSTAL" device=""/>
