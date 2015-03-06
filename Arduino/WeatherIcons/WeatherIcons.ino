@@ -7,23 +7,23 @@
 
 #include "TembooAccount.h"
 
-Adafruit_CC3000 cc3000(19, 2, 20); // CS, IRQ, VBEN
+Adafruit_CC3000 cc3000(7, 22, 14); // CS, IRQ, VBEN
 Adafruit_CC3000_Client client;
-Adafruit_ST7735 tft(0, 4, 1); // CS, DC, Reset
+Adafruit_ST7735 tft(21, 9, 23); // CS, DC, Reset
 unsigned long ip;
 
 void setup() {
   delay(3000);
   Serial.begin(9600);
   
-  if(!SD.begin(18)) {
+  if(!SD.begin(15)) {
     tft.println("SD init failed.");
     Serial.println("SD init failed.");
   }
 
   // TFT backlight  
-  pinMode(3, OUTPUT);
-  digitalWrite(3, HIGH);
+  pinMode(4, OUTPUT);
+  digitalWrite(4, HIGH);
   
   tft.initR(INITR_BLACKTAB);
   tft.fillScreen(ST7735_BLACK);
