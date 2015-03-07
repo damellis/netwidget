@@ -7481,9 +7481,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="U$3" gate="G$1" pin="CARD_CS"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(TCK/PCINT18)PC2"/>
-<wire x1="83.82" y1="30.48" x2="104.14" y2="30.48" width="0.1524" layer="91"/>
-<label x="104.14" y="30.48" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC1" gate="G$1" pin="(TDI/PCINT21)PC5"/>
+<wire x1="83.82" y1="22.86" x2="104.14" y2="22.86" width="0.1524" layer="91"/>
+<label x="104.14" y="22.86" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="TFT_CS" class="0">
@@ -7493,9 +7493,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="U$3" gate="G$1" pin="TFT_CS"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(XCK0/T0/PCINT8)PB0"/>
-<wire x1="83.82" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
-<label x="104.14" y="58.42" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC1" gate="G$1" pin="(TXD1/INT1/PCINT27)PD3"/>
+<wire x1="83.82" y1="5.08" x2="104.14" y2="5.08" width="0.1524" layer="91"/>
+<label x="104.14" y="5.08" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -7590,9 +7590,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="U$2" gate="G$1" pin="CS"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(TMS/PCINT19)PC3"/>
-<wire x1="83.82" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91"/>
-<label x="104.14" y="27.94" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC1" gate="G$1" pin="(XCK0/T0/PCINT8)PB0"/>
+<wire x1="83.82" y1="58.42" x2="104.14" y2="58.42" width="0.1524" layer="91"/>
+<label x="104.14" y="58.42" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="VBEN" class="0">
@@ -7602,9 +7602,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="U$2" gate="G$1" pin="VBEN"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(TDO/PCINT20)PC4"/>
-<wire x1="83.82" y1="25.4" x2="104.14" y2="25.4" width="0.1524" layer="91"/>
-<label x="104.14" y="25.4" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC1" gate="G$1" pin="(CLKO/T1/PCINT9)PB1"/>
+<wire x1="83.82" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
+<label x="104.14" y="55.88" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="IRQ" class="0">
@@ -7626,9 +7626,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pinref part="U$3" gate="G$1" pin="RESET"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="(CLKO/T1/PCINT9)PB1"/>
-<wire x1="83.82" y1="55.88" x2="104.14" y2="55.88" width="0.1524" layer="91"/>
-<label x="104.14" y="55.88" size="1.778" layer="95" rot="MR0"/>
+<pinref part="IC1" gate="G$1" pin="(XCK1/OC1B/PCINT28)PD4"/>
+<wire x1="83.82" y1="2.54" x2="104.14" y2="2.54" width="0.1524" layer="91"/>
+<label x="104.14" y="2.54" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
 <net name="N$6" class="0">
