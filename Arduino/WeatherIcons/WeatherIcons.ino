@@ -7,16 +7,16 @@
 
 #include "TembooAccount.h"
 
-Adafruit_CC3000 cc3000(7, 22, 14); // CS, IRQ, VBEN
+Adafruit_CC3000 cc3000(21, 22, 23); // CS, IRQ, VBEN
 Adafruit_CC3000_Client client;
-Adafruit_ST7735 tft(21, 9, 23); // CS, DC, Reset
+Adafruit_ST7735 tft(3, 9, 8); // CS, DC, Reset
 unsigned long ip;
 
 void setup() {
   delay(3000);
   Serial.begin(9600);
   
-  if(!SD.begin(15)) {
+  if(!SD.begin(16)) {
     tft.println("SD init failed.");
     Serial.println("SD init failed.");
   }
