@@ -3,7 +3,7 @@
 #include <Adafruit_CC3000.h>
 #include <CapacitiveSensor.h>
 
-#define WLAN_SSID "MIT GUEST"
+#define WLAN_SSID "Mellis"
 #define WLAN_PASS ""
 #define WLAN_SECURITY WLAN_SEC_UNSEC
 
@@ -112,6 +112,7 @@ void loop(void)
     if (touch > 0) touch--;
   }
   
+  Serial.println("connecting...");
   Adafruit_CC3000_Client www = cc3000.connectTCP(ip, 80);
   if (www.connected()) {
     www.fastrprint(F("GET /input/"));
@@ -157,15 +158,23 @@ void loop(void)
     return;
   }
 
-  Serial.println(F("-------------------------------------"));
-  
   /* Read data until either the connection is closed, or the idle timeout is reached. */ 
-  lastRead = millis();
-  www.setTimeout(IDLE_TIMEOUT_MS);
-  www.find("\"touch\":\"");
-  touch = www.parseInt();
-  Serial.print("touch = "); Serial.println(touch);
-  www.close();
+  www.setTimeout(1);
+  Serial.println("Looking for touch...");
+  if (www.findUntil("\"touch\":\"", "]")) {
+    Serial.println("found");
+    touch = www.parseInt();
+    Serial.print("touch = "); Serial.println(touch);
+  }
+//  lastRead = millis();
+//  while (www.connected() && (millis() - lastRead < IDLE_TIMEOUT_MS)) {
+//    while (www.available()) {
+//      char c = www.read();
+//      Serial.print(c);
+//      lastRead = millis();
+//    }
+//  }
+//  www.close();
   Serial.println(F("-------------------------------------"));
 
 //  /* You need to make sure to clean up after yourself or the CC3000 can freak out */
