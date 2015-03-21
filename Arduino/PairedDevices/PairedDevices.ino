@@ -34,6 +34,7 @@ int redpin = 5, greenpin = 6, bluepin = 10;
 int ledpin = 8; // the small led
 
 int touch;
+String timestamp, prevtimestamp;
 
 uint32_t ip;
 
@@ -160,12 +161,30 @@ void loop(void)
 
   /* Read data until either the connection is closed, or the idle timeout is reached. */ 
   www.setTimeout(1);
-  Serial.println("Looking for touch...");
+  Serial.print("Looking for touch...");
   if (www.findUntil("\"touch\":\"", "]")) {
     Serial.println("found");
     touch = www.parseInt();
     Serial.print("touch = "); Serial.println(touch);
+    
+    Serial.println("Looking for timestamp...");
+    if (www.findUntil("\"timestamp\":\"", "]")) {
+      prevtimestamp = timestamp;
+      Serial.println("found");
+      timestamp = www.readStringUntil('"');
+      Serial.println(timestamp);
+    } else {
+      Serial.println("not found");
+    }
+    
+    if (prevtimestamp == timestamp) {
+      Serial.println("repeated timestamp. setting touch = 0");
+      touch = 0;
+    }
+  } else {
+    Serial.println("not found");
   }
+  
 //  lastRead = millis();
 //  while (www.connected() && (millis() - lastRead < IDLE_TIMEOUT_MS)) {
 //    while (www.available()) {
