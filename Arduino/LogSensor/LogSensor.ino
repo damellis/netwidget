@@ -31,7 +31,13 @@ It might not work on all networks!
 #include <string.h>
 #include "utility/debug.h"
 
-#include "config.h"
+#define WLAN_SSID       "Mellis"           // cannot be longer than 32 characters!
+#define WLAN_PASS       "myPassword"
+// Security can be WLAN_SEC_UNSEC, WLAN_SEC_WEP, WLAN_SEC_WPA or WLAN_SEC_WPA2
+#define WLAN_SECURITY   WLAN_SEC_UNSEC
+
+#define SPARKFUN_PUBLIC_KEY ""
+#define SPARKFUN_PRIVATE_KEY ""
 
 // These are the interrupt and control pins
 #define ADAFRUIT_CC3000_IRQ   22  // MUST be an interrupt pin!
@@ -113,7 +119,7 @@ void setup(void)
 
 void loop(void)
 {
-  int sensorValue = analogRead(A1);
+  int sensorValue = analogRead(A0);
   int voltage = map(sensorValue, 0, 1024, 0, 5000); // in mV (i.e. 5000 is 5V)
   float temperature = map(voltage, 750, 1000, 250, 500) / 10.0; // 750 mV is 25C
   
