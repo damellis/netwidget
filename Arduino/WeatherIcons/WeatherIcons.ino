@@ -95,7 +95,7 @@ void loop() {
   GetWeatherByAddressChoreo.setAppKey(TEMBOO_APP_KEY);
 
   // Set Choreo inputs
-  String AddressValue = "Cambridge, MA";
+  String AddressValue = "Berkeley, CA";
   GetWeatherByAddressChoreo.addInput("Address", AddressValue);
   
   // Filter Choreo output
@@ -172,10 +172,10 @@ void loop() {
     tft.println(text2);
     tft.setCursor(0, 108);
     tft.println(AddressValue);
-    tft.println(date.substring(5));
+    tft.println(date.substring(0, date.lastIndexOf(" "))); // remove timezone
     if (sd && conditions[code] != -1) tft.image(images[conditions[code]], 110, 0);
     Serial.println("Done.");
-    delay(4L * 60 * 60 * 1000); // on success, wait four hours
+    delay(1L * 60 * 60 * 1000); // on success, wait one hour
   } else {
 //    tft.setCursor(0, 100);
 //    tft.print(http_code);
