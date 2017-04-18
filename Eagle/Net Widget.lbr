@@ -238,7 +238,7 @@
 <hole x="2.2" y="1" drill="1"/>
 </package>
 <package name="USB-MINIB-POWER">
-<description>USB Mini B connector, with wider power and ground pads for (slightly) easier soldering.</description>
+<description>Surface mount USB Mini B connector, with wider power and ground pads for (slightly) easier soldering.</description>
 <wire x1="3.9" y1="0.03" x2="3.9" y2="4.13" width="0.127" layer="51"/>
 <wire x1="-2.9591" y1="0.7229" x2="-2.7514" y2="-2.0285" width="0.1016" layer="51"/>
 <wire x1="-2.7514" y1="-2.0285" x2="-2.5438" y2="-2.288" width="0.1016" layer="51" curve="68.629849"/>
