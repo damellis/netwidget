@@ -147,7 +147,7 @@
 <pad name="P$10" x="-25.4" y="11.43" drill="1" shape="octagon"/>
 </package>
 <package name="USB-MINIB">
-<description>Surface Mount USB Mini-B Female Connector</description>
+<description>Surface Mount USB Mini-B</description>
 <wire x1="3.9" y1="-1.24" x2="3.9" y2="2.86" width="0.127" layer="51"/>
 <wire x1="-2.9591" y1="-0.5471" x2="-2.7514" y2="-3.2985" width="0.1016" layer="51"/>
 <wire x1="-2.7514" y1="-3.2985" x2="-2.5438" y2="-3.558" width="0.1016" layer="51" curve="68.629849"/>
